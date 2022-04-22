@@ -21,7 +21,7 @@
   <arg name="localization" default="false"/>
   <arg name="database_path" default="~/.ros/rtabmap.db"/>
   <arg     if="$(arg localization)" name="rtabmap_args" default=""/>
-  <!-- delete_db_on_start  -->
+  <!-- add "delete_db_on_start" rag to argument if we want to start with a fresh mapping session  -->
   <arg unless="$(arg localization)" name="rtabmap_args" default="--Grid/VoxelSize 1 --Grid/RayTracing true --GridGlobal/ProbClampingMax 0.8 --GridGlobal/ProbClampingMin 0.4 --RGBD/LinearUpdate 0 --RGBD/AngularUpdate 0"/>
 
 
