@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="ov2slam" type="ov2slam_node" name="ov2slam_node" output="screen" args="/home/benlaptop/catkin_ws/src/WHR_SLAM_pipeline/ov2slam/parameters_files/accurate/ov2slam_capstone.yaml" />
+</launch>
